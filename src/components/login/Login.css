@@ -1,0 +1,20 @@
+body {
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/979/801/86/minimalism-hexagon-wallpaper-preview.jpg");
+  background-repeat: none;
+}
+.container {
+  background-color: rgba(0, 30, 255, 0.645);
+  width: 450px;
+  margin-top: 70px;
+  margin-left: 450px;
+  box-shadow: 0px 0px 30px #c1baed;
+}
+.form-label {
+  color: #fff;
+}
+.logo {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: auto;
+}
