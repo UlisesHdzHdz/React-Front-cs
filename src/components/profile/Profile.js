@@ -75,10 +75,10 @@ function Profile() {
         window.location.reload();
       })
       .catch((ex3) => {
-        console.error("outer", ex3.message);
-        console.log("error post");
-        console.log(error.response);
-        if (error.response.data === "Este usuario tiene un perfil existente") {
+          console.error("outer", ex3.message);
+          console.log("error post");
+          console.log(ex3.response);
+        if (ex3.response.data === "Este usuario tiene un perfil existente") {
           console.log("ejecutar put");
           let putData = new FormData();
           putData.append("url_img", document.getElementById("img").files[0]);
@@ -144,7 +144,7 @@ function Profile() {
       .catch((ex5) => {
         console.error("outer", ex5.message);
         alert("No se pudieron actualizar los datos");
-        console.log(error.response.data);
+        console.log(ex5.response.data);
       });
   };
 
